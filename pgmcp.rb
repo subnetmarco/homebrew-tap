@@ -11,7 +11,7 @@ class Pgmcp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/subnetmarco/pgmcp/releases/download/v0.3.0/pgmcp_0.3.0_darwin_amd64.tar.gz"
-      sha256 "0a4f2c11bf4539f247f6786d1ed1cdd430ff7a27ba1e45456b7b5128cbc091ef"
+      sha256 "7497b58cc8c3fbf579082002dd606baf4b7999b8646a9016e35778a91917da9e"
 
       def install
         bin.install "pgmcp-server"
@@ -20,7 +20,7 @@ class Pgmcp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/subnetmarco/pgmcp/releases/download/v0.3.0/pgmcp_0.3.0_darwin_arm64.tar.gz"
-      sha256 "1e6cb3e2a9cdafba8a86868e922892d77390727f3b7f7e66e69efb15c83bad2c"
+      sha256 "7da9a52c6347976e5260519e4c16a43f03ff151a4dd1b362a2ed72c2238093a7"
 
       def install
         bin.install "pgmcp-server"
@@ -32,7 +32,7 @@ class Pgmcp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/subnetmarco/pgmcp/releases/download/v0.3.0/pgmcp_0.3.0_linux_amd64.tar.gz"
-      sha256 "42f4c22a206af283a9c2af0087144cbe56edb4d920e4e778a4e32d391ede77db"
+      sha256 "4ceb47f3c7e9e926fd77004d9c48498c1a2362b0b7e80fe381d9dddf968a225a"
       def install
         bin.install "pgmcp-server"
         bin.install "pgmcp-client"
@@ -40,7 +40,7 @@ class Pgmcp < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/subnetmarco/pgmcp/releases/download/v0.3.0/pgmcp_0.3.0_linux_arm64.tar.gz"
-      sha256 "c765276c62e05b386d6dd76f28822417b39c70b2c25ccab8b8328100d31d95ce"
+      sha256 "cf3f4b281e698492bcb7f91cdadbaedaf454faf8c52648b92163b0b4471b9cf7"
       def install
         bin.install "pgmcp-server"
         bin.install "pgmcp-client"
